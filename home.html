@@ -1,433 +1,777 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+
     <title>Smart Class - Home</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- ================= NAVIGATION ================= -->
+
     <nav>
         <h2>Smart Class</h2>
 
         <div>
-    <a href="home.html">Home</a>
-    <a href="#subjects">Subjects</a>
-    <a href="#timetable">Timetable</a>
-    <a href="#faculty">Faculty</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="index.html">Logout</a>
-</div>
+            <a href="home.html">Home</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#reminder">Staff Reminder</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="index.html">Logout</a>
+        </div>
     </nav>
 
+
+    <!-- ================= WELCOME ================= -->
+
     <section class="welcome">
+
         <h1>Welcome to Smart Class</h1>
+
         <p>Learn. Explore. Grow.</p>
-        <p>Access your learning materials and improve your knowledge.</p>
+
+        <p>
+            Access your learning materials and improve your knowledge.
+        </p>
+
     </section>
-<section class="dashboard">
 
-    <h2>Student Dashboard</h2>
 
-    <div class="dashboard-box">
+    <!-- ================= STUDENT DASHBOARD ================= -->
 
-        <div>
-            <h3>4</h3>
-            <p>Subjects</p>
-        </div>
+    <section class="dashboard">
 
-        <div>
-            <h3>20+</h3>
-            <p>Topics</p>
-        </div>
+        <h2>Student Dashboard</h2>
 
-        <div>
-            <h3>24/7</h3>
-            <p>Learning</p>
-        </div>
+        <div class="dashboard-box">
 
-    </div>
-
-</section>
-<section id="timetable" class="creative-timetable">
-
-    <h2>📅 Smart Class Timetable</h2>
-    <p class="timetable-subtitle">Your weekly learning schedule</p>
-
-    <!-- Monday -->
-    <div class="day-card">
-        <div class="day-header">
-            <h3>Monday</h3>
-            <span>4 Classes</span>
-        </div>
-
-        <div class="period-list">
-            <div class="period-card">
-                <div class="period-number">01</div>
-                <div class="period-time">9:00 - 10:00</div>
-                <div class="period-info">
-                    <h4>Data Science</h4>
-                    <p>👨‍🏫 Dr. Kumar</p>
-                </div>
+            <div>
+                <h3>4</h3>
+                <p>Subjects</p>
             </div>
 
-            <div class="period-card">
-                <div class="period-number">02</div>
-                <div class="period-time">10:00 - 11:00</div>
-                <div class="period-info">
-                    <h4>Web Technology</h4>
-                    <p>👩‍🏫 Ms. Priya</p>
-                </div>
+            <div>
+                <h3>20+</h3>
+                <p>Topics</p>
             </div>
 
-            <div class="period-card">
-                <div class="period-number">03</div>
-                <div class="period-time">11:15 - 12:15</div>
-                <div class="period-info">
-                    <h4>C# Programming</h4>
-                    <p>👨‍🏫 Mr. Arun</p>
-                </div>
-            </div>
-
-            <div class="period-card">
-                <div class="period-number">04</div>
-                <div class="period-time">12:15 - 1:15</div>
-                <div class="period-info">
-                    <h4>Database</h4>
-                    <p>👩‍🏫 Ms. Divya</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tuesday -->
-    <div class="day-card">
-        <div class="day-header">
-            <h3>Tuesday</h3>
-            <span>4 Classes</span>
-        </div>
-
-        <div class="period-list">
-
-            <div class="period-card">
-                <div class="period-number">01</div>
-                <div class="period-time">9:00 - 10:00</div>
-                <div class="period-info">
-                    <h4>Web Technology</h4>
-                    <p>👩‍🏫 Ms. Priya</p>
-                </div>
-            </div>
-
-            <div class="period-card">
-                <div class="period-number">02</div>
-                <div class="period-time">10:00 - 11:00</div>
-                <div class="period-info">
-                    <h4>Database</h4>
-                    <p>👩‍🏫 Ms. Divya</p>
-                </div>
-            </div>
-
-            <div class="period-card">
-                <div class="period-number">03</div>
-                <div class="period-time">11:15 - 12:15</div>
-                <div class="period-info">
-                    <h4>Data Science</h4>
-                    <p>👨‍🏫 Dr. Kumar</p>
-                </div>
-            </div>
-
-            <div class="period-card">
-                <div class="period-number">04</div>
-                <div class="period-time">12:15 - 1:15</div>
-                <div class="period-info">
-                    <h4>C# Programming</h4>
-                    <p>👨‍🏫 Mr. Arun</p>
-                </div>
+            <div>
+                <h3>24/7</h3>
+                <p>Learning</p>
             </div>
 
         </div>
-    </div>
 
-    <!-- Wednesday -->
-    <div class="day-card">
-        <div class="day-header">
-            <h3>Wednesday</h3>
-            <span>4 Classes</span>
+    </section>
+
+
+    <!-- ================= TIMETABLE ================= -->
+
+    <section id="timetable" class="creative-timetable">
+
+        <h2>📅 Smart Class Timetable</h2>
+
+        <p class="timetable-subtitle">
+            Your weekly learning schedule
+        </p>
+
+
+        <!-- Monday -->
+
+        <div class="day-card">
+
+            <div class="day-header">
+                <h3>Monday</h3>
+                <span>4 Classes</span>
+            </div>
+
+            <div class="period-list">
+
+                <div class="period-card">
+                    <div class="period-number">01</div>
+                    <div class="period-time">9:00 - 10:00</div>
+
+                    <div class="period-info">
+                        <h4>Data Science</h4>
+                        <p>👨‍🏫 Dr. Kumar</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">02</div>
+                    <div class="period-time">10:00 - 11:00</div>
+
+                    <div class="period-info">
+                        <h4>Web Technology</h4>
+                        <p>👩‍🏫 Ms. Priya</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">03</div>
+                    <div class="period-time">11:15 - 12:15</div>
+
+                    <div class="period-info">
+                        <h4>C# Programming</h4>
+                        <p>👨‍🏫 Mr. Arun</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">04</div>
+                    <div class="period-time">12:15 - 1:15</div>
+
+                    <div class="period-info">
+                        <h4>Database</h4>
+                        <p>👩‍🏫 Ms. Divya</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="period-list">
 
-            <div class="period-card">
-                <div class="period-number">01</div>
-                <div class="period-time">9:00 - 10:00</div>
-                <div class="period-info">
-                    <h4>C# Programming</h4>
-                    <p>👨‍🏫 Mr. Arun</p>
-                </div>
+        <!-- Tuesday -->
+
+        <div class="day-card">
+
+            <div class="day-header">
+                <h3>Tuesday</h3>
+                <span>4 Classes</span>
             </div>
 
-            <div class="period-card">
-                <div class="period-number">02</div>
-                <div class="period-time">10:00 - 11:00</div>
-                <div class="period-info">
-                    <h4>Data Science</h4>
-                    <p>👨‍🏫 Dr. Kumar</p>
+            <div class="period-list">
+
+                <div class="period-card">
+                    <div class="period-number">01</div>
+                    <div class="period-time">9:00 - 10:00</div>
+
+                    <div class="period-info">
+                        <h4>Web Technology</h4>
+                        <p>👩‍🏫 Ms. Priya</p>
+                    </div>
                 </div>
+
+                <div class="period-card">
+                    <div class="period-number">02</div>
+                    <div class="period-time">10:00 - 11:00</div>
+
+                    <div class="period-info">
+                        <h4>Database</h4>
+                        <p>👩‍🏫 Ms. Divya</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">03</div>
+                    <div class="period-time">11:15 - 12:15</div>
+
+                    <div class="period-info">
+                        <h4>Data Science</h4>
+                        <p>👨‍🏫 Dr. Kumar</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">04</div>
+                    <div class="period-time">12:15 - 1:15</div>
+
+                    <div class="period-info">
+                        <h4>C# Programming</h4>
+                        <p>👨‍🏫 Mr. Arun</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Wednesday -->
+
+        <div class="day-card">
+
+            <div class="day-header">
+                <h3>Wednesday</h3>
+                <span>4 Classes</span>
             </div>
 
-            <div class="period-card">
-                <div class="period-number">03</div>
-                <div class="period-time">11:15 - 12:15</div>
-                <div class="period-info">
-                    <h4>Database</h4>
-                    <p>👩‍🏫 Ms. Divya</p>
+            <div class="period-list">
+
+                <div class="period-card">
+                    <div class="period-number">01</div>
+                    <div class="period-time">9:00 - 10:00</div>
+
+                    <div class="period-info">
+                        <h4>C# Programming</h4>
+                        <p>👨‍🏫 Mr. Arun</p>
+                    </div>
                 </div>
+
+                <div class="period-card">
+                    <div class="period-number">02</div>
+                    <div class="period-time">10:00 - 11:00</div>
+
+                    <div class="period-info">
+                        <h4>Data Science</h4>
+                        <p>👨‍🏫 Dr. Kumar</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">03</div>
+                    <div class="period-time">11:15 - 12:15</div>
+
+                    <div class="period-info">
+                        <h4>Database</h4>
+                        <p>👩‍🏫 Ms. Divya</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">04</div>
+                    <div class="period-time">12:15 - 1:15</div>
+
+                    <div class="period-info">
+                        <h4>Web Technology</h4>
+                        <p>👩‍🏫 Ms. Priya</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Thursday -->
+
+        <div class="day-card">
+
+            <div class="day-header">
+                <h3>Thursday</h3>
+                <span>4 Classes</span>
             </div>
 
-            <div class="period-card">
-                <div class="period-number">04</div>
-                <div class="period-time">12:15 - 1:15</div>
-                <div class="period-info">
-                    <h4>Web Technology</h4>
-                    <p>👩‍🏫 Ms. Priya</p>
+            <div class="period-list">
+
+                <div class="period-card">
+                    <div class="period-number">01</div>
+                    <div class="period-time">9:00 - 10:00</div>
+
+                    <div class="period-info">
+                        <h4>Database</h4>
+                        <p>👩‍🏫 Ms. Divya</p>
+                    </div>
                 </div>
+
+                <div class="period-card">
+                    <div class="period-number">02</div>
+                    <div class="period-time">10:00 - 11:00</div>
+
+                    <div class="period-info">
+                        <h4>C# Programming</h4>
+                        <p>👨‍🏫 Mr. Arun</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">03</div>
+                    <div class="period-time">11:15 - 12:15</div>
+
+                    <div class="period-info">
+                        <h4>Web Technology</h4>
+                        <p>👩‍🏫 Ms. Priya</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">04</div>
+                    <div class="period-time">12:15 - 1:15</div>
+
+                    <div class="period-info">
+                        <h4>Data Science</h4>
+                        <p>👨‍🏫 Dr. Kumar</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Friday -->
+
+        <div class="day-card">
+
+            <div class="day-header">
+                <h3>Friday</h3>
+                <span>4 Classes</span>
+            </div>
+
+            <div class="period-list">
+
+                <div class="period-card">
+                    <div class="period-number">01</div>
+                    <div class="period-time">9:00 - 10:00</div>
+
+                    <div class="period-info">
+                        <h4>Data Science</h4>
+                        <p>👨‍🏫 Dr. Kumar</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">02</div>
+                    <div class="period-time">10:00 - 11:00</div>
+
+                    <div class="period-info">
+                        <h4>C# Programming</h4>
+                        <p>👨‍🏫 Mr. Arun</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">03</div>
+                    <div class="period-time">11:15 - 12:15</div>
+
+                    <div class="period-info">
+                        <h4>Web Technology</h4>
+                        <p>👩‍🏫 Ms. Priya</p>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-number">04</div>
+                    <div class="period-time">12:15 - 1:15</div>
+
+                    <div class="period-info">
+                        <h4>Database</h4>
+                        <p>👩‍🏫 Ms. Divya</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= FACULTY ================= -->
+
+    <section id="faculty" class="faculty">
+
+        <h2>Faculty Mapping</h2>
+
+        <p class="faculty-subtitle">
+            Meet your subject faculty
+        </p>
+
+        <div class="faculty-box">
+
+            <div class="faculty-card">
+                <div class="faculty-icon">👨‍🏫</div>
+                <h3>Data Science</h3>
+                <p>Dr. Kumar</p>
+                <span>Data Science Faculty</span>
+            </div>
+
+            <div class="faculty-card">
+                <div class="faculty-icon">👩‍🏫</div>
+                <h3>Web Technology</h3>
+                <p>Ms. Priya</p>
+                <span>Web Technology Faculty</span>
+            </div>
+
+            <div class="faculty-card">
+                <div class="faculty-icon">👨‍💻</div>
+                <h3>C# Programming</h3>
+                <p>Mr. Arun</p>
+                <span>C# Faculty</span>
+            </div>
+
+            <div class="faculty-card">
+                <div class="faculty-icon">👩‍💻</div>
+                <h3>Database</h3>
+                <p>Ms. Divya</p>
+                <span>Database Faculty</span>
             </div>
 
         </div>
-    </div>
 
-    <!-- Thursday -->
-    <div class="day-card">
-        <div class="day-header">
-            <h3>Thursday</h3>
-            <span>4 Classes</span>
-        </div>
+    </section>
 
-        <div class="period-list">
 
-            <div class="period-card">
-                <div class="period-number">01</div>
-                <div class="period-time">9:00 - 10:00</div>
-                <div class="period-info">
-                    <h4>Database</h4>
-                    <p>👩‍🏫 Ms. Divya</p>
-                </div>
-            </div>
+    <!-- ================= STAFF REMINDER ================= -->
 
-            <div class="period-card">
-                <div class="period-number">02</div>
-                <div class="period-time">10:00 - 11:00</div>
-                <div class="period-info">
-                    <h4>C# Programming</h4>
-                    <p>👨‍🏫 Mr. Arun</p>
-                </div>
-            </div>
+    <section id="reminder" class="reminder-section">
 
-            <div class="period-card">
-                <div class="period-number">03</div>
-                <div class="period-time">11:15 - 12:15</div>
-                <div class="period-info">
-                    <h4>Web Technology</h4>
-                    <p>👩‍🏫 Ms. Priya</p>
-                </div>
-            </div>
+        <h2>🔔 Staff Reminder</h2>
 
-            <div class="period-card">
-                <div class="period-number">04</div>
-                <div class="period-time">12:15 - 1:15</div>
-                <div class="period-info">
-                    <h4>Data Science</h4>
-                    <p>👨‍🏫 Dr. Kumar</p>
-                </div>
-            </div>
+        <p class="reminder-subtitle">
+            Is your staff member late? Send a reminder.
+        </p>
 
-        </div>
-    </div>
+        <div class="reminder-box">
 
-    <!-- Friday -->
-    <div class="day-card">
-        <div class="day-header">
-            <h3>Friday</h3>
-            <span>4 Classes</span>
-        </div>
+            <label for="staffSelect">
+                Select Staff
+            </label>
 
-        <div class="period-list">
+            <select id="staffSelect">
 
-            <div class="period-card">
-                <div class="period-number">01</div>
-                <div class="period-time">9:00 - 10:00</div>
-                <div class="period-info">
-                    <h4>Data Science</h4>
-                    <p>👨‍🏫 Dr. Kumar</p>
-                </div>
-            </div>
+                <option value="Dr. Kumar">
+                    Dr. Kumar - Data Science
+                </option>
 
-            <div class="period-card">
-                <div class="period-number">02</div>
-                <div class="period-time">10:00 - 11:00</div>
-                <div class="period-info">
-                    <h4>C# Programming</h4>
-                    <p>👨‍🏫 Mr. Arun</p>
-                </div>
-            </div>
+                <option value="Ms. Priya">
+                    Ms. Priya - Web Technology
+                </option>
 
-            <div class="period-card">
-                <div class="period-number">03</div>
-                <div class="period-time">11:15 - 12:15</div>
-                <div class="period-info">
-                    <h4>Web Technology</h4>
-                    <p>👩‍🏫 Ms. Priya</p>
-                </div>
-            </div>
+                <option value="Mr. Arun">
+                    Mr. Arun - C# Programming
+                </option>
 
-            <div class="period-card">
-                <div class="period-number">04</div>
-                <div class="period-time">12:15 - 1:15</div>
-                <div class="period-info">
-                    <h4>Database</h4>
-                    <p>👩‍🏫 Ms. Divya</p>
-                </div>
-            </div>
+                <option value="Ms. Divya">
+                    Ms. Divya - Database
+                </option>
+
+            </select>
+
+            <button type="button" onclick="sendReminder()">
+                🔔 Send Reminder
+            </button>
+
+            <p id="reminderMessage"></p>
 
         </div>
-    </div>
 
-</section>
-<section id="faculty" class="faculty">
 
-    <h2>Faculty Mapping</h2>
-    <p class="faculty-subtitle">Meet your subject faculty</p>
+        <!-- STAFF RESPONSE -->
 
-    <div class="faculty-box">
+        <div class="staff-response">
 
-        <div class="faculty-card">
-            <div class="faculty-icon">👨‍🏫</div>
-            <h3>Data Science</h3>
-            <p>Dr. Kumar</p>
-            <span>Data Science Faculty</span>
+            <h3>Staff Response</h3>
+
+            <p id="staffResponse">
+                No response yet.
+            </p>
+
         </div>
 
-        <div class="faculty-card">
-            <div class="faculty-icon">👩‍🏫</div>
-            <h3>Web Technology</h3>
-            <p>Ms. Priya</p>
-            <span>Web Technology Faculty</span>
-        </div>
+    </section>
 
-        <div class="faculty-card">
-            <div class="faculty-icon">👨‍💻</div>
-            <h3>C# Programming</h3>
-            <p>Mr. Arun</p>
-            <span>C# Faculty</span>
-        </div>
 
-        <div class="faculty-card">
-            <div class="faculty-icon">👩‍💻</div>
-            <h3>Database</h3>
-            <p>Ms. Divya</p>
-            <span>Database Faculty</span>
-        </div>
+    <!-- ================= SUBJECTS ================= -->
 
-    </div>
+    <h2 id="subjects" class="title">
+        Our Subjects
+    </h2>
 
-</section>
-    <h2 id="subjects" class="title">Our Subjects</h2>
     <div class="search-box">
 
-       <input type="text" id="searchInput" placeholder="Search subject..." onkeyup="searchSubjects()">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search subject..."
+        >
 
-</div>
+    </div>
+
 
     <div class="subjects">
 
         <div class="card">
+
             <h3>Data Science</h3>
-            <p>Learn data analysis and machine learning basics.</p>
 
-            <a href="data-science.html">
-                <button>Learn More</button>
+            <p>
+                Learn data analysis and machine learning basics.
+            </p>
+
+            <a href="data-science.html" class="learn-more">
+                Learn More
             </a>
+
         </div>
 
+
         <div class="card">
+
             <h3>Web Technology</h3>
-            <p>Learn HTML, CSS and web development.</p>
 
-            <a href="web-technology.html">
-                <button>Learn More</button>
+            <p>
+                Learn HTML, CSS and web development.
+            </p>
+
+            <a href="web-technology.html" class="learn-more">
+                Learn More
             </a>
+
         </div>
 
+
         <div class="card">
+
             <h3>C# Programming</h3>
-            <p>Learn programming using C#.</p>
 
-            <a href="csharp.html">
-                <button>Learn More</button>
+            <p>
+                Learn programming using C#.
+            </p>
+
+            <a href="csharp.html" class="learn-more">
+                Learn More
             </a>
+
         </div>
 
-        <div class="card">
-            <h3>Database</h3>
-            <p>Learn database concepts and SQL.</p>
 
-            <a href="database.html">
-                <button>Learn More</button>
+        <div class="card">
+
+            <h3>Database</h3>
+
+            <p>
+                Learn database concepts and SQL.
+            </p>
+
+            <a href="database.html" class="learn-more">
+                Learn More
             </a>
+
         </div>
 
     </div>
-<section id="about" class="about">
 
-    <h2>About Smart Class</h2>
 
-    <p>
-        Smart Class is an online learning platform designed
-        to help students learn different subjects easily.
-    </p>
+    <!-- ================= ABOUT ================= -->
 
-    <p>
-        Students can explore subjects, study important topics
-        and access learning materials in one place.
-    </p>
+    <section id="about" class="about">
 
-</section>
-<section id="contact" class="contact">
+        <h2>About Smart Class</h2>
 
-    <h2>Contact Us</h2>
+        <p>
+            Smart Class is an online learning platform designed
+            to help students learn different subjects easily.
+        </p>
 
-    <p>Email: smartclass@gmail.com</p>
+        <p>
+            Students can explore subjects, study important topics
+            and access learning materials in one place.
+        </p>
 
-    <p>Phone: +91 98765 43210</p>
+    </section>
 
-    <p>We are here to help students learn better.</p>
 
-</section>
-<footer>
-    <p>© 2026 Smart Class. All Rights Reserved.</p>
-    <p>Online Learning Platform</p>
-</footer>
-<script>
-document.getElementById("searchInput").addEventListener("keyup", function() {
+    <!-- ================= CONTACT ================= -->
 
-    let search = this.value.toLowerCase();
+    <section id="contact" class="contact">
 
-    let cards = document.querySelectorAll(".card");
+        <h2>Contact Us</h2>
 
-    cards.forEach(function(card) {
+        <p>Email: smartclass@gmail.com</p>
 
-        let subject = card.querySelector("h3").textContent.toLowerCase();
+        <p>Phone: +91 98765 43210</p>
 
-        if (subject.includes(search)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
+        <p>
+            We are here to help students learn better.
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Smart Class. All Rights Reserved.
+        </p>
+
+        <p>
+            Online Learning Platform
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        // ==========================================
+        // SUBJECT SEARCH
+        // ==========================================
+
+        document
+            .getElementById("searchInput")
+            .addEventListener("keyup", function() {
+
+                let search = this.value.toLowerCase();
+
+                let cards =
+                    document.querySelectorAll(".card");
+
+                cards.forEach(function(card) {
+
+                    let subject =
+                        card.querySelector("h3")
+                        .textContent
+                        .toLowerCase();
+
+                    if (subject.includes(search)) {
+
+                        card.style.display = "block";
+
+                    } else {
+
+                        card.style.display = "none";
+
+                    }
+
+                });
+
+            });
+
+
+        // ==========================================
+        // SEND STAFF REMINDER
+        // ==========================================
+
+        function sendReminder() {
+
+            let staff =
+                document.getElementById("staffSelect").value;
+
+            let subject = "";
+
+            if (staff === "Dr. Kumar") {
+
+                subject = "Data Science";
+
+            }
+            else if (staff === "Ms. Priya") {
+
+                subject = "Web Technology";
+
+            }
+            else if (staff === "Mr. Arun") {
+
+                subject = "C# Programming";
+
+            }
+            else if (staff === "Ms. Divya") {
+
+                subject = "Database";
+
+            }
+
+
+            // Create reminder
+
+            let reminder = {
+
+                student: "Student",
+
+                className: "II B.Sc DS",
+
+                staff: staff,
+
+                subject: subject,
+
+                message:
+                    "Faculty, you are late for the class.",
+
+                time:
+                    new Date().toLocaleTimeString()
+
+            };
+
+
+            // Save reminder for faculty dashboard
+
+            localStorage.setItem(
+                "studentReminder",
+                JSON.stringify(reminder)
+            );
+
+
+            // Remove previous faculty response
+
+            localStorage.removeItem(
+                "facultyResponse"
+            );
+
+
+            // Show success message
+
+            document.getElementById(
+                "reminderMessage"
+            ).innerHTML =
+                "✅ Reminder sent to " +
+                staff +
+                " successfully.";
+
+
+            // Show waiting message
+
+            document.getElementById(
+                "staffResponse"
+            ).innerHTML =
+                "⏳ Waiting for staff response...";
+
         }
 
-    });
 
-});
-</script>
+        // ==========================================
+        // CHECK FACULTY RESPONSE
+        // ==========================================
+
+        function checkFacultyResponse() {
+
+            let response =
+                localStorage.getItem("facultyResponse");
+
+
+            if (!response) {
+
+                return;
+
+            }
+
+
+            let data =
+                JSON.parse(response);
+
+
+            document.getElementById(
+                "staffResponse"
+            ).innerHTML =
+
+                "✅ Faculty Response: " +
+                data.status +
+                "<br><br>" +
+                "<small>Response time: " +
+                data.time +
+                "</small>";
+
+        }
+
+
+        // Check when page loads
+
+        checkFacultyResponse();
+
+
+        // Check every 2 seconds
+
+        setInterval(
+            checkFacultyResponse,
+            2000
+        );
+
+    </script>
+
 </body>
 </html>
