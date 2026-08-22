@@ -80,34 +80,37 @@
 
 </div>
 
-
 <div class="login-box">
 
     <h2>Faculty Login</h2>
 
-    <form action="faculty-dashboard.html"
-          onsubmit="return validateForm()">
+    <form onsubmit="return login()">
 
-        <input type="text"
-               id="username"
-               placeholder="Enter Username"
-               required>
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+            required
+        >
 
-        <input type="password"
-               id="password"
-               placeholder="Enter Password"
-               required>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required
+        >
 
-        <button type="submit">Login</button>
+        <button type="submit">
+            Login
+        </button>
 
     </form>
 
 </div>
 
-
 <script>
 
-function validateForm() {
+function login() {
 
     var username =
         document.getElementById("username").value;
@@ -115,24 +118,17 @@ function validateForm() {
     var password =
         document.getElementById("password").value;
 
-    var correctUsername = "Priya";
-    var correctPassword = "Priya123";
+    // Store the faculty name
+    localStorage.setItem(
+        "facultyName",
+        username
+    );
 
-    if (username !== correctUsername) {
+    // Open faculty dashboard
+    window.location.href =
+        "faculty-dashboard.html";
 
-        alert("Invalid Username!");
-
-        return false;
-    }
-
-    if (password !== correctPassword) {
-
-        alert("Invalid Password!");
-
-        return false;
-    }
-
-    return true;
+    return false;
 }
 
 </script>
