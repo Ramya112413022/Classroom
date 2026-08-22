@@ -13,18 +13,30 @@
 
         <p>Welcome to Smart Class</p>
 
-        <input type="text" placeholder="Enter Username">
+        <h3>Select Login</h3>
 
-        <input type="password" placeholder="Enter Password">
+        <button onclick="studentLogin()">
+            Student Login
+        </button>
 
-        <button onclick="login()">Login</button>
+        <br><br>
+
+        <button onclick="facultyLogin()">
+            Faculty Login
+        </button>
 
     </div>
 
     <script>
-        function login() {
+
+        function studentLogin() {
             window.location.href = "home.html";
         }
+
+        function facultyLogin() {
+            window.location.href = "faculty-login.html";
+        }
+
     </script>
 
 </body>
