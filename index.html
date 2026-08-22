@@ -29,9 +29,33 @@
 
     <script>
 
-        function studentLogin() {
-            window.location.href = "home.html";
-        }
+        function login() {
+
+    var username =
+        document.querySelector(
+            'input[type="text"]'
+        ).value;
+
+    var password =
+        document.querySelector(
+            'input[type="password"]'
+        ).value;
+
+    if (username === "" || password === "") {
+
+        alert("Please enter username and password.");
+
+        return;
+    }
+
+    localStorage.setItem(
+        "studentName",
+        username
+    );
+
+    window.location.href = "home.html";
+}
+
 
         function facultyLogin() {
             window.location.href = "faculty-login.html";
